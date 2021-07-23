@@ -1,13 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>m2-06-junit-events-app</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  	<properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>m2-06-junit-events-app</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>16</maven.compiler.source>
 		<maven.compiler.target>16</maven.compiler.target>
+
+		<!-- Propiedades de Sonar -->
+		<sonar.projectKey>Morgui_m2-06-junit-events-app-alan</sonar.projectKey>
+		<sonar.organization>morgui</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.login>18889372dd3c1b1e090395c797bef60d20d096e0</sonar.login>
+
 	</properties>
 	<dependencies>
 
@@ -28,20 +37,20 @@
 			<version>1.8.0-M1</version>
 			<scope>test</scope>
 		</dependency>
-		
-		
-	<!-- https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
-	<dependency>
-	    <groupId>org.mockito</groupId>
-	    <artifactId>mockito-junit-jupiter</artifactId>
-	    <version>3.11.2</version>
-	    <scope>test</scope>
-	</dependency>
-		
-	
+
+
+		<!-- https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>3.11.2</version>
+			<scope>test</scope>
+		</dependency>
+
+
 	</dependencies>
-	
-	
+
+
 	<reporting>
 
 		<plugins>
@@ -70,11 +79,11 @@
 			<!-- <version>3.1.2</version> -->
 			<!-- </plugin> -->
 
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 				<artifactId>maven-pmd-plugin</artifactId> -->
-<!-- 				<version>3.14.0</version> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-pmd-plugin</artifactId> -->
+			<!-- <version>3.14.0</version> -->
+			<!-- </plugin> -->
 
 			<plugin>
 				<groupId>com.github.spotbugs</groupId>
@@ -154,19 +163,19 @@
 				</executions>
 			</plugin>
 
-<!-- 			<plugin> -->
-<!-- 				<groupId>org.apache.maven.plugins</groupId> -->
-<!-- 				<artifactId>maven-pmd-plugin</artifactId> -->
-<!-- 				<version>3.14.0</version> -->
-<!-- 			</plugin> -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.apache.maven.plugins</groupId> -->
+			<!-- <artifactId>maven-pmd-plugin</artifactId> -->
+			<!-- <version>3.14.0</version> -->
+			<!-- </plugin> -->
 
 
 
 		</plugins>
 
 	</build>
-	
-	
-	
-	
+
+
+
+
 </project>
